@@ -2,7 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-In this project creater heroes,heroes-details,dashboard,hero-search component
+In this project,first of all created a Hero interface and array of heroes in mock-heroes.ts file. 
+There are 5 components which are heroes,hero-detail,dashboard,hero-search,messages component.
+Displaying heroes in the form of list.
+Added services to interact with the components.
+HeroService will fetch the data synchronously from the mock-heroes.
+After importing the HttpClient, HttpClientInMemoryWebApiModule modules.
+then, http.get() to fetch the heroes data.
+When the HeroService requests heroes from the server, the server will take several minues to respond.
+Showing messages.
+Then MessageService for sending message to be displayed at the bottom.
+Injecting MessageService into the HeroService.
+Added navigation.
+Get data from a sever using httpClient methods like get(),post() to add a hero,put() for update and delete() for deleting a hero.
+
+
+
 
 ## Development server
 
